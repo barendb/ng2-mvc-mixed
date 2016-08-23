@@ -1,0 +1,18 @@
+﻿@model holy_grail.Controllers.ExampleModel
+
+<table>
+	@foreach (var r in Model.Rows)
+	{
+		<tr>
+			@foreach (var c in r.Columns)
+			{
+				<td>
+					@c.Value
+				</td>
+			}
+		</tr>
+	}
+</table>
+
+<br/>
+<strong>{{message}}</strong>
